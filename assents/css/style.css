@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --var-cor-preto: #18181b;
+    --var-cor-branco: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--var-cor-preto);
+}
+.calculator {
+    background-color: var(--var-cor-branco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+.calculator input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border-bottom: solid 2px ;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.calculator button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 3px;
+    background-color: var(--var-cor-preto);
+    color: var(--var-cor-branco);
+    cursor: pointer;
+}
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 2rem;
+    padding: 2.25rem;
+    border-top: 3px solid;
+}

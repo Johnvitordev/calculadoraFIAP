@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com Formulário</title>
+    <link rel="stylesheet" href="/assents/css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora com Formulário</h1>
+        <form id="calcForm">
+            <section>
+                <div>
+                    <label for="input">valor 1</label>
+                    <input type="number" id="num1" name="num1" placeholder="Digite o primeiro número" required>
+                </div>
+                <div>
+                    <label for="input">valor 2</label>
+                    <input type="number" id="num2" name="num2" placeholder="Digite o segundo número" required>
+                </div>
+            </section>
+            <button type="button" id="somar">Somar</button>
+            <button type="button" id="subtrair">Subtrair</button>
+            <button type="button" id="multiplicar">Multiplicar</button>
+            <button type="button" id="dividir">Dividir</button>
+        </form>
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script src="/assents/js/script.js"></script>
+</body>
+</html>
